@@ -17,9 +17,9 @@ const props = defineProps({
 				<el-carousel-item v-if="url.backdrop_url != null" @click.stop="router.push(`/watch/${url.kp_id}`)">
 					<el-image :src="url.backdrop_url" fit="contain" class="rounded-xl"/>
 					<div class="absolute flex flex-col z-[1] justify-end bottom-0 left-0 p-6 bg-[rgba(0,0,0,.2)] w-full h-full">
-						<div class="text-white text-2xl">
+						<h1 class="text-white text-2xl">
 							{{ url.name_rus ?? url.name }}
-						</div>
+						</h1>
 						<div class="text-white text-sm">
 							{{ url.genre.join(', ') }}
 						</div>
